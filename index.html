@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="icon" href="img/Schildinnenweissaussentrans.png">
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <title>Start2Code</title>
+</head>
+
+<body>
+    <div class="app">
+        <div id="top">
+            <div style="text-align: right; margin-top: 25px">
+                <img src="img/S2C_logo_RGB_Schriftzug_sehrKlein.png"
+                     style="width: 40%; height: 40%;
+                     max-width: 200px; max-height: 28px">
+            </div>
+            <div class="filename"></div><br>
+        </div>
+<div class="editor" id="editor">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Titel&lt;/title&gt;
+    &lt;script&gt;
+        var x = "Hello";
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1 style="text-align: center"&gt;
+        Hallo Welt
+    &lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</div>
+
+
+        <div class="menu-top">
+            <div style="width: 200px; margin: 30vh auto 10vh auto">
+                <input type="text" id="filename-input">
+                <label for="filename-input" style="text-align: right">.html</label>
+            </div>
+            <div style="width: 250px; margin: 0 auto;">
+                <a href="#" class="close" style="float: left">Abbrechen</a>
+                <a href="#" class="save">Speichern</a>
+            </div>
+        </div>
+        <div class="menu-right">
+
+        </div>
+        <div class="menu-bottom">
+
+        </div>
+        <div class="menu-left">
+            <div class="topbar">
+                <span style="line-height: 20vh; margin-left: 4vw;">Neue Datei</span>
+                <span class="close">&times;</span>
+            </div>
+            <div class="bottombar">
+                <div class="container">
+                    <span class="options" id="open">Öffnen</span>
+                    <span class="options" id="delete">Löschen</span>
+                </div>
+            </div>
+            <div id="filecontainer">
+
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="menu-icon">
+                <img src="img/burgermenu.png" width="50" height="50"><br>
+            </div>
+            <div class="open-tag"></div>
+            <div class="close-tag"></div>
+            <div class="open-curly"></div>
+            <div class="close-curly"></div>
+            <div class="save"></div>
+        </div>
+        <div class="bottombar">
+            <div class="publish">
+                Veröffentlichen
+            </div>
+            <div class="options">
+                <span class="option1">Editor</span>
+                <span class="option2">Vorschau</span>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

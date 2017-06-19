@@ -1,0 +1,183 @@
+@font-face {
+    font-family: Roboto;
+    src: url('Roboto.woff2');
+}
+
+body {
+    font-family: Roboto;
+}
+
+#top {
+    height: 10vh;
+    max-height: 80px;
+    min-height: 60px;
+}
+
+.sidebar {
+    width: 50px;
+    height: 100vh;
+    background-color: #00ccc9;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.bottombar {
+    width: 100vw;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #e62687;
+    line-height: 60px;
+    z-index: 2;
+}
+
+.menu-icon {
+    color: white;
+    margin: 2vh 0 5vh 0;
+    font-size: 24pt;
+    text-align: center;
+}
+
+.publish {
+    float: right;
+    color: white;
+    margin-right: 2vw;
+}
+
+#editor {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+
+
+.options {
+    text-align: center;
+    color: white;
+}
+
+.option1, .option2 {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.open-tag {
+    background: url("../img/tags.png") left;
+
+    margin-top: 55vh;
+}
+.close-tag {
+    background: url("../img/tags.png") right;
+}
+
+.open-tag, .close-tag {
+    background-size: cover;
+    margin: 1vh auto;
+    width: 20px;
+    height: 30px;
+}
+
+.open-curly {
+    background: url("../img/open.png") left;
+}
+
+.close-curly {
+    background: url("../img/close.png") right;
+}
+
+.open-curly, .close-curly {
+    background-size: cover;
+    margin: 3vh auto;
+    width: 10px;
+    height: 27px;
+}
+
+.sidebar .save {
+    background: url("../img/save.png");
+    background-size: cover;
+    margin: 5vh auto;
+    width: 20px;
+    height: 20px;
+}
+
+.menu-top .save {
+    float: right;
+}
+
+.menu-left {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: -100vw;
+    background-color: white;
+}
+
+.menu-left .topbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 15vh;
+    background-color: #00ccc9;
+}
+
+.menu-left .bottombar .container {
+    width: 160px;
+    margin: 0 auto;
+}
+
+span.options {
+    display: inline-block;
+    margin: 0 10px;
+    visibility: hidden;
+}
+
+.menu-left .topbar .close {
+    float: right;
+    font-size: 60px;
+    line-height: 15vh;
+    margin-right: 4vw;
+}
+
+.menu-left #filecontainer .files {
+    height: 5vh;
+    text-align: center;
+    line-height: 5vh;
+    background-color: lightgray;
+}
+
+hr {
+    margin: 0;
+    width: 100vw;
+    padding: 0;
+}
+
+.filename {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.menu-top {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: -100vh;
+    background-color: white;
+}
+
+.menu-top a {
+    display: block;
+    width: 80px;
+    padding: 10px;
+    background-color: #e62687;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
