@@ -44,10 +44,12 @@ $(document).ready(function () {
     $(".option1").css({backgroundColor: "black"}).click(function () {
         $(this).css({backgroundColor: "black"});
         $(".option2").css({backgroundColor: "transparent"});
+        $(".menu-bottom").animate({bottom: "-100vh"}, 500);
     });
     $(".option2").click(function () {
         $(this).css({backgroundColor: "black"});
         $(".option1").css({backgroundColor: "transparent"});
+        $(".menu-bottom").animate({bottom: "0vh"}, 500);
     });
 
     $(".menu-icon").click(function () {
@@ -181,6 +183,10 @@ function hightlight(element) {
     selectedElement = element;
     $(".menu-left .bottombar .container .options").css({visibility: "visible"});
 }
+
+/*function getContent() {
+    return $("#editor").text();
+}*/
 
 
 

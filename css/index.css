@@ -3,7 +3,7 @@
     src: url('Roboto.woff2');
 }
 
-body {
+html, body {
     font-family: Roboto;
 }
 
@@ -31,7 +31,7 @@ body {
     left: 0;
     background-color: #e62687;
     line-height: 60px;
-    z-index: 2;
+    z-index: 4;
 }
 
 .menu-icon {
@@ -180,4 +180,24 @@ hr {
     color: white;
     text-decoration: none;
     text-align: center;
+}
+
+.menu-bottom {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    bottom: -100vh;
+    background-color: white;
+}
+
+.menu-right {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    right: -100vw;
+    background-color: white;
 }
